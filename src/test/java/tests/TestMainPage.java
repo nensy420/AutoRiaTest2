@@ -55,59 +55,59 @@ public class TestMainPage {
 
     }
 
-//
-//    @Test()
-//    public void linkFollowing() {
-//        MainPageLinks test = new MainPageLinks(driver);
-//        test.link();
-//        String url = driver.getCurrentUrl();
-//        String actualURL = "https://auto.ria.com/car/used/";
-//        Assert.assertTrue(url.equals(actualURL));
-//
-//    }
-//
-//    @Test
-//    public void testToolTipViki() {
-//        MainToolTip tip = new MainToolTip(driver);
-//        tip.toolTipViki();
-//        String expectedTooltip = "Википедия об AUTO.RIA";
-//        Assert.assertTrue(tip.getActualTitle().contains(expectedTooltip));
-//
-//    }
-//
-//    @Test
-//    public void testToolTipVakansii() {
-//        MainToolTip tip = new MainToolTip(driver);
-//        tip.toolTipVakansii();
-//        String expectedTooltip = "Вакансии на проекте AUTO.RIA";
-//        Assert.assertTrue(tip.getActualTitle().contains(expectedTooltip));
-//
-//    }
-//
-//    @Test
-//    public void validSearch() {
-//        MainSearchForm search = new MainSearchForm(driver);
-//        search.enterSearchParameters("Легковые", "2015", "2017", "200", "50000", "Audi", "Q7", "Киев");
-//        search.waitTimeBy(listOfRezaltSearchForm);
-//        List<WebElement> listOfRezalts = driver.findElements(listOfRezaltSearchForm);
-//        String expectedTitle = "Audi Q7";
-//        for (WebElement elm : listOfRezalts) {
-//            search.waitTime(elm);
-//            String actualTitle = elm.getAttribute("title");
-//            Assert.assertTrue(actualTitle.contains(expectedTitle));
-//
-//        }
-//
-//    }
-//
-//    @Test
-//    public void invalidYearSearch() {
-//        MainSearchForm search = new MainSearchForm(driver);
-//        search.enterSearchParameters("Легковые", "2010", "2003", "200", "50000", "Audi", "Q7", "Киев");
-//        //  WebDriverWait waiter = new WebDriverWait(driver, 10);
-//        //  waiter.until(ExpectedConditions.visibilityOfElementLocated(errorMassegeOnSearchPage));
-//        Assert.assertTrue(driver.findElement(errorMassegeOnSearchPage).isDisplayed());
-//
-//
-//    }
+
+    @Test()
+    public void linkFollowing() {
+        MainPageLinks test = new MainPageLinks(driver);
+        test.link();
+        String url = driver.getCurrentUrl();
+        String actualURL = "https://auto.ria.com/car/used/";
+        Assert.assertTrue(url.equals(actualURL));
+
+    }
+
+    @Test
+    public void testToolTipViki() {
+        MainToolTip tip = new MainToolTip(driver);
+        tip.toolTipViki();
+        String expectedTooltip = "Википедия об AUTO.RIA";
+        Assert.assertTrue(tip.getActualTitle().contains(expectedTooltip));
+
+    }
+
+    @Test
+    public void testToolTipVakansii() {
+        MainToolTip tip = new MainToolTip(driver);
+        tip.toolTipVakansii();
+        String expectedTooltip = "Вакансии на проекте AUTO.RIA";
+        Assert.assertTrue(tip.getActualTitle().contains(expectedTooltip));
+
+    }
+
+    @Test
+    public void validSearch() {
+        MainSearchForm search = new MainSearchForm(driver);
+        search.enterSearchParameters("Легковые", "2015", "2017", "200", "50000", "Audi", "Q7", "Киев");
+        search.waitTimeBy(listOfRezaltSearchForm);
+        List<WebElement> listOfRezalts = driver.findElements(listOfRezaltSearchForm);
+        String expectedTitle = "Audi Q7";
+        for (WebElement elm : listOfRezalts) {
+            search.waitTime(elm);
+            String actualTitle = elm.getAttribute("title");
+            Assert.assertTrue(actualTitle.contains(expectedTitle));
+
+        }
+
+    }
+
+    @Test
+    public void invalidYearSearch() {
+        MainSearchForm search = new MainSearchForm(driver);
+        search.enterSearchParameters("Легковые", "2010", "2003", "200", "50000", "Audi", "Q7", "Киев");
+        //  WebDriverWait waiter = new WebDriverWait(driver, 10);
+        //  waiter.until(ExpectedConditions.visibilityOfElementLocated(errorMassegeOnSearchPage));
+        Assert.assertTrue(driver.findElement(errorMassegeOnSearchPage).isDisplayed());
+
+
+    }
 }
