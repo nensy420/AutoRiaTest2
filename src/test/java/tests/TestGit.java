@@ -12,6 +12,9 @@ public class TestGit {
         System.out.print("Hello");
 
     }
+    public void helloThere(){
+        System.out.println("Hi");
+    }
 
 
 }
