@@ -7,9 +7,9 @@ public class TestGit {
 
     public void test(){
 
-        System.out.print("Hello");
-        System.out.print("Hello");
-        System.out.print("Hello");
+        System.out.print("Hellogdfghearh");
+        System.out.print("Hedzhaetuatllo");
+        System.out.print("Helljfgzjfgjo");
 
     }
     public void helloThere(){
