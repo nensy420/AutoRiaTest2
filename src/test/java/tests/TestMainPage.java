@@ -88,7 +88,7 @@ public class TestMainPage {
     public void validSearch() {
         MainSearchForm search = new MainSearchForm(driver);
         search.enterSearchParameters("Легковые", "2015", "2017", "200", "50000", "Audi", "Q7", "Киев");
-        search.waitTimeBy(listOfRezaltSearchForm);
+        search.enterPrice(listOfRezaltSearchForm);
         List<WebElement> listOfRezalts = driver.findElements(listOfRezaltSearchForm);
         String expectedTitle = "Audi Q7";
         for (WebElement elm : listOfRezalts) {
