@@ -7,10 +7,11 @@ public class TestGit {
 
     public void test(){
 
+        String h = "Mememem";
+
         System.out.print("Hellogdfghearh");
         System.out.print("Hedzhaetuatllo");
         System.out.print("Helljfgzjfgjo");
-
     }
     public void helloThere(){
         System.out.println("Hi");
