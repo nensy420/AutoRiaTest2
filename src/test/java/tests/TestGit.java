@@ -6,10 +6,10 @@ public class TestGit {
     private WebDriver driver;
 
     public void test(){
-
-        System.out.print("Hello");
-        System.out.print("Hello");
-        System.out.print("Hello");
+        String h = "Mememem";
+        System.out.print(h);
+        System.out.print(h);
+        System.out.print(h);
 
     }
     public void helloThere(){
